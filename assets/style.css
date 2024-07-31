@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#search-container {
+  position: fixed;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 120px); /* Full width minus the button width */
+  box-sizing: border-box;
+}
+
+#search-form button {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+}
+
+#search-form button:hover {
+  background-color: #f0f0f0;
+}
+
+.container {
+  margin-top: 200px; /* Adjust to ensure space below the search container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#current-weather,
+#forecast {
+  max-width: 800px; /* Adjust width as needed */
+  width: 100%; /* Full width of the container */
+  margin: 20px 0; /* Vertical margin for spacing */
+  padding: 20px;
+  background-color: #fff; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#current-weather {
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+}
+
+#forecast {
+  border-top: 1px solid #ddd; /* Subtle border for separation */
+}

@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-
-    <main>
-    </main>
+    <div id="search-container">
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="search-history">Search History</div>
+        <div id="current-weather">Current Weather</div>
+        <div id="forecast">5-Day Forecast</div>
+    </div>
     <script src="assets/script.js"></script>
 </body>
 </html>
